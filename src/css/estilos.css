@@ -4,6 +4,19 @@ body {
     color: #ffffff;
 }
 
+body::before{
+    content: "";
+    background-image: url(../imagens/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: .2;
+}
+
 .cabecalho {
     display: flex;
     justify-content: center;
@@ -13,6 +26,8 @@ body {
     display: flex;
     align-items: center;
     gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
 }
 
 .selecao-de-personagens .lista-de-personagens {
@@ -39,7 +54,7 @@ body {
     text-align: center;
 }
 
-.lista-de-personagens .personagens img {
+.lista-de-personagens .personagem img {
     width: 100%;
     height: 100%;
 }
@@ -61,6 +76,7 @@ body {
 .personagem-selecionado .nome-personagem {
     border-bottom: 2px solid #47f4ff;
     letter-spacing: 4px;
+    letter-spacing: 4px;
     text-transform: uppercase;
 }
 
@@ -69,4 +85,5 @@ body {
     line-height: 22px;
     text-align: center;
     margin-top: 20px;
+    width: 420px;
 }
